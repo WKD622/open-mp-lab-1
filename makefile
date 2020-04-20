@@ -1,1 +1,2 @@
-gcc -Wall bucket_sort.c -o bucket_sort -fopenmp
+all: 
+	gcc -Wall bucket_sort.c -o bucket_sort -fopenmp
