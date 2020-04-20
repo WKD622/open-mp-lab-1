@@ -14,8 +14,10 @@ int main(int argc, char **argv) {
     int i, a[N];
 
     #pragma omp parallel for
-    for (i = 0; i < N; i++)
+    for (i = 0; i < N; i++){
         a[i] = rand() % 100;
+        printf('a');
+    }
     
     clock_t end = clock();
     double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
