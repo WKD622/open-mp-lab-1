@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
 
     #pragma omp parallel for
     for (i = 0; i < N; i++){
-        int i = rand() % 100
+        int i = rand() % 100;
         a[i] = rand() % 100;
         printf("%d ", i);
     }
