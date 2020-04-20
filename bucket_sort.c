@@ -13,6 +13,7 @@ int main(int argc, char **argv) {
     for (i = 0; i < N; i++)
         a[i] = rand() % 100;
     
-    printf('dupa')
+    printf('dupa');
+    
     return 0;
  }
