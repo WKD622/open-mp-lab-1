@@ -1,1 +1,1 @@
-gcc -Wall main.c -o main -fopenmp
+gcc -Wall bucket_sort.c -o bucket_sort -fopenmp
