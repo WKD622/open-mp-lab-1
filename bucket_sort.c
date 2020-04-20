@@ -9,7 +9,8 @@ int main(int argc, char **argv) {
 
     srand(time(0)); 
     const int N = 10000000;
-    int i, a[N];
+    int *a = malloc(N * sizeof(int));
+    int i;
 
     #pragma omp parallel for
     for (i = 0; i < N; i++){
