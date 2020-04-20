@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
     #pragma omp parallel for
     for (i = 0; i < N; i++){
         a[i] = rand() % 100;
-        printf('a');
+        printf("a");
     }
     
     clock_t end = clock();
