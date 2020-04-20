@@ -7,17 +7,14 @@
 int main(int argc, char **argv) {
     clock_t begin = clock();
 
-/* here, do your time-consuming job */
-
     srand(time(0)); 
-    const int N = 100000;
+    const int N = 10000000;
     int i, a[N];
 
     #pragma omp parallel for
     for (i = 0; i < N; i++){
         int i = rand() % 100;
         a[i] = rand() % 100;
-        printf("%d ", i);
     }
     
     clock_t end = clock();
