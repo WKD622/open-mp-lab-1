@@ -12,7 +12,6 @@ int main(int argc, char **argv) {
     int *a = malloc(N * sizeof(int));
     int i;
 
-    #pragma omp parallel for
     for (i = 0; i < N; i++){
         int i = rand() % 100;
         a[i] = rand() % 100;
